@@ -1,0 +1,7 @@
+faire la methode pour trouver les meilleur params
+faire d'autre graphs
+rajouter les params utilisé dans les graphs
+
+
+
+pour l'erreur de bool numpy => downgrade to numpy==1.23.1
