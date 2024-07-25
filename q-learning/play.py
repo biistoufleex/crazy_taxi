@@ -1,5 +1,5 @@
 import numpy as np
-import gym
+import gymnasium as gym
 import argparse
 
 def play(env, q_table, episodes):

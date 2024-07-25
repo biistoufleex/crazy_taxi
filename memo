@@ -4,7 +4,8 @@ rajouter les params utilisé dans les graphs
 
 
 
-pour l'erreur de bool numpy => downgrade to numpy==1.23.1
+pour l'pip install numpy==1.23.1 de bool 
+pip install numpy==1.23.1
 
 
 
