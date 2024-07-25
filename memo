@@ -5,3 +5,9 @@ rajouter les params utilisé dans les graphs
 
 
 pour l'erreur de bool numpy => downgrade to numpy==1.23.1
+
+
+
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
