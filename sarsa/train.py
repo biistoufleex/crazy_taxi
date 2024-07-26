@@ -86,12 +86,12 @@ def plot_steps_distribution(steps):
 
 def train(env=gym.make("Taxi-v3"),
           episodes=2000,
-          gamma=0.95,
-          epsilon=1,
+          gamma=0.9,
+          epsilon=0.1,
           max_epsilon=1,
           min_epsilon=0.001,
           epsilon_decay=0.01,
-          alpha=0.85,
+          alpha=0.5,
           path_table: str = "sarsa_qtable"):
     
     Q = np.zeros((env.observation_space.n, env.action_space.n))
@@ -192,17 +192,17 @@ if __name__ == "__main__":
     parser.add_argument("-a",
                         "--alpha",
                         type=float,
-                        default=0.85,
+                        default=0.5,
                         help="Learning Rate")
     parser.add_argument("-g",
                         "--gamma",
                         type=float,
-                        default=0.99,
+                        default=0.9,
                         help="Discount Rating")
     parser.add_argument("-e",
                         "--epsilon",
                         type=float,
-                        default=1,
+                        default=0.1,
                         help="Exploration Rate")
     parser.add_argument("--min_epsilon",
                         type=float,
