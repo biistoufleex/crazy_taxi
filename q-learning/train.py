@@ -85,12 +85,12 @@ def plot_steps_distribution(steps):
 
 def train(env=gym.make("Taxi-v3"),
           episodes: int = 25000,
-          lr: float = 0.01,
+          lr: float = 0.1,
           gamma: float = 0.99,
-          epsilon: float = 1,
+          epsilon: float = 0.3,
           max_epsilon: float = 1,
           min_epsilon: float = 0.001,
-          epsilon_decay: float = 0.01,
+          epsilon_decay: float = 0.1,
           path_table: str = "qtable") -> tuple[float, int]:
     
     q_table = np.zeros([env.observation_space.n, env.action_space.n])
